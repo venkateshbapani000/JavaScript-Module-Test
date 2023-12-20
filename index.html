@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock paper scissors game</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="scoreboard">
+            <div class="title">
+                <ul type="none">
+                    <li>ROCK</li>
+                    <li>PAPER</li>
+                    <li>SCISSORS</li>
+                </ul>
+            </div>
+                <div class="COMPUTERSCORE">
+                    <p>COMPUTER <br>&nbsp&nbsp&nbsp SCORE</p>
+                    <h1>0</h1>
+
+                </div>
+                <div  class="YOURSCORE">
+                    <p>&nbspYOUR <br>SCORE</p>
+                    <h1 class="zero">0</h1>
+                </div>
+
+        </div>
+        <div class="hands">
+            <div class="upper">
+                
+                    <div class="first">
+                     
+                      <img class="hand"  src="Group 2.png" onclick="pickuserHand('paper')">
+                      
+                      <div><img class="line1" src="Line 1.png" alt=""></div>
+                      <div><img   class="line2" src="Line 2.png" alt=""></div>
+                      <div><img class="line3" src="Line 3.png" alt=""></div>
+                    </div>
+                    <div class="rock" >
+                        
+                      <img  src="Group 2 (2).png" onclick="pickuserHand('rock')">
+                      
+                    </div>
+                      
+                <div  class="scissor">
+                
+                     <img  class="full"   src="Group 2 (1).png" onclick="pickuserHand('scissor')">
+                </div>
+            </div>
+        </div>
+        
+            <div class="x" onclick="hiderules('rules')" >
+              <img src="X.png" >
+            </div>
+            <div class="rules">
+              <h2 class="rec" > &nbsp&nbsp&nbsp&nbsp&nbsp Game Rules</h2>
+              <p class="rec" > <img  src="Rectangle 5.png" alt=""> Rock beats scissors, scissors beat <br>&nbsp&nbsp  paper, and paper beats rock.</p>
+              <p class="rec" > <img  src="Rectangle 5.png" alt=""> Agree ahead of time whether you’ll <br> &nbsp&nbspcount off “rock, paper, scissors, <br> &nbsp&nbspshoot” or just “rock, paper, scissors.”</p>
+              <p class="rec" > <img  src="Rectangle 5.png" alt=""> Use rock, paper, scissors to settle  <br> &nbsp&nbspminor decisions or simply play to <br>&nbsp&nbsp pass the time</p>
+              <p class="rec" > <img  src="Rectangle 5.png" alt=""> If both players lay down the same <br> &nbsp&nbsphand, each player lays down another <br> &nbsp&nbsphand</p>
+            </div>
+           <div class="rulesbutton" onclick="displayrules('none')" >RULES</div>
+        
+        <div class="context">
+            <div class="userhand">
+                
+                     <p class="para" >YOU PICKED</p>
+                        
+                            <div class= "handimagecontainer">
+                                    <img id="userpicker"  src="Group 2 (2).png">
+                            </div>
+                        
+                    
+                
+            </div>
+            <div class="referee">
+                
+                <div class="winorlose">
+                    <h4 class="Decision">YOU WIN</h4>
+                <h7>AGAINST PC</h7></div>
+                <div class="newgame" onclick="restartgame()" >PLAY AGAIN</div>
+            </div>
+            <div class="pc">
+                <p class="para1" >PC PICKED</p>
+                <div class= "handimagecontainer1"> 
+                    <div class="scissor1">
+
+                    
+                        <img  id="computerpicker" src="Group 2 (1).png">
+                      </div>
+                    </div>
+
+                </div>
+                <div class="next" onclick="hurray('next')" >
+                    NEXT
+                </div>
+
+
+
+
+
+            </div>
+
+        </div>
+        
+        <div class="last">
+            <img class="stars" src="Group 5.png" alt="">
+            <img class= "cup" src="Vector.png" alt="">
+            <h1 class="review" >HURRAY!!</h1>
+            <h2 class="review1" >YOU WON THE GAME</h2>
+
+            <div class="newgame1" onclick="playagain()" >PLAY AGAIN</div>
+
+
+        </div>
+
+        
+    </div>
+
+    
+</body>
+</html>
